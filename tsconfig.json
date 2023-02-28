@@ -1,0 +1,68 @@
+{
+    "ts-node": {
+      "extends": "ts-node/node14/tsconfig.json",
+      "transpileOnly": true,
+      "files": true,
+      "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "noImplicitAny":true,
+      }
+    },
+    "compilerOptions": {
+      "target": "esnext",
+      "baseUrl": "src",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext",
+        "es5",
+        "es6",
+        "es2015",
+        "es2017",
+        "es2020"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "esnext",
+      "noFallthroughCasesInSwitch": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "paths": {
+        "@Primitives": ["@Primitives"],
+        "@Icons": ["@Assets/@Icons"],
+        "@Images": ["@Assets/@Images"],
+        "@Assets": ["@Assets"],
+        "@Routes": ["src/routes.tsx"],
+        "@Utils": ["@Utils"],
+        "@Services": ["@Services"],
+        "@Views": ["@Views"],
+        "@Components": ["@Components"],
+        "@Helpers": ["@Utils/helpers/index.ts"],
+        "@Constants": ["@Constants"],
+        "@controllers":["@Controllers"]
+      }
+    },
+    "include": [
+      "src",
+    //   "stories",
+      "webpack"
+    ],
+    "exclude": ["node_modules"],
+    "rules": {
+      "variable-name": [
+        true,
+        "allow-leading-underscore"
+      ],
+    },
+  }
+  

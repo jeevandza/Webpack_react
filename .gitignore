@@ -1,1 +1,15 @@
 
+build
+node_modules
+.DS_Store
+npm-debug.log
+package-lock.json
+yarn.lock
+
+
+public/*
+!public/index.html
+!public/favicon.png
+storybook-static
+.env
+node_modules
